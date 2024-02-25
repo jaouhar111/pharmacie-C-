@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CE2EF42-4ACD-47A0-BC6F-AF70CC726931}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.ToggleSwitch">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu.UI.WinForms.ToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="BunifuDataViz 1.0.1">
+      <HintPath>..\..\..\..\..\Desktop\BookShopManagement\BookShopManagement\BookShopManagement\bin\Debug\BunifuDataViz 1.0.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Compressed\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Client_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Client_UC.Designer.cs">
+      <DependentUpon>Client_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Command_UC.Designer.cs">
+      <DependentUpon>Command_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\Afficher_client.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Crud\Afficher_client.Designer.cs">
+      <DependentUpon>Afficher_client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\AjouterC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Crud\AjouterC.Designer.cs">
+      <DependentUpon>AjouterC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\AjouterP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Crud\AjouterP.Designer.cs">
+      <DependentUpon>AjouterP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\Ajouter_Client.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Crud\Ajouter_Client.Designer.cs">
+      <DependentUpon>Ajouter_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\ModifierC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Crud\ModifierC.Designer.cs">
+      <DependentUpon>ModifierC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\ModifierP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Crud\ModifierP.Designer.cs">
+      <DependentUpon>ModifierP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\Modifier_Client.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Crud\Modifier_Client.Designer.cs">
+      <DependentUpon>Modifier_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard_UC.Designer.cs">
+      <DependentUpon>Dashboard_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Price_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Price_UC.Designer.cs">
+      <DependentUpon>Price_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produit_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Produit_UC.Designer.cs">
+      <DependentUpon>Produit_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Show_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Show_Form.Designer.cs">
+      <DependentUpon>Show_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Client_UC.resx">
+      <DependentUpon>Client_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Command_UC.resx">
+      <DependentUpon>Command_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\Afficher_client.resx">
+      <DependentUpon>Afficher_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\AjouterC.resx">
+      <DependentUpon>AjouterC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\AjouterP.resx">
+      <DependentUpon>AjouterP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\Ajouter_Client.resx">
+      <DependentUpon>Ajouter_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\ModifierC.resx">
+      <DependentUpon>ModifierC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\ModifierP.resx">
+      <DependentUpon>ModifierP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\Modifier_Client.resx">
+      <DependentUpon>Modifier_Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard_UC.resx">
+      <DependentUpon>Dashboard_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Price_UC.resx">
+      <DependentUpon>Price_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produit_UC.resx">
+      <DependentUpon>Produit_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Show_Form.resx">
+      <DependentUpon>Show_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
